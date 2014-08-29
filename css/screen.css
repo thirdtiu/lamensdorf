@@ -40,6 +40,7 @@ img{
 	border-radius: 4px;
 	font-weight: 200;
 	font-size: 1.5625em;
+	white-space: inherit;
 }
 .btn-primary{
 	background-color: #221f73;
@@ -149,11 +150,11 @@ img{
 .mod-hd.bordered.arrow-centered:before{
 	left: 50%;	
 }
-.mod-lmtrinfo .media > .pull-left{
-	margin-right: 30px;
-	margin-left: 37px;
-}
 
+.mod-lmtrinfo .media-object{
+	position: relative;
+	bottom: 0;
+}
 .mod-bd{
 	color: #333;
 }
@@ -231,7 +232,9 @@ img{
 	color: #333;
 }
 .footer-brad{
-	margin-top:-426px;
+	/*margin-top:-426px;*/
+	position: absolute;
+	bottom: -96px;
 }
 
 /* ui to top */
@@ -280,15 +283,9 @@ img{
 #toTop:active, #toTop:focus {
 	outline:none;
 }
-@media (max-width: 766px){
-	.mod-subscribe .form-control{
-		width: 100%;
-	}
-	.mod-subscribe form{
-		text-align: left !important;
-	}
-}
-@media (max-width: 700px){
+
+/* Small devices (tablets, mobile) */
+@media (max-width: 991px){
 	.mod-lmtrinfo .media > .pull-left{
 		margin-left: 0;
 		margin-right: 0;
@@ -299,9 +296,8 @@ img{
 	}
 	.mod-lmtrinfo .media-object{
 		display: inline-block;
+		
 	}
-}
-@media (max-width: 650px){
 	.media-subscribe-sample{
 		width: 100%;
 		margin-bottom: 20px;
@@ -310,15 +306,25 @@ img{
 	.media-subscribe-sample ul li{
 		margin: 15px 0;
 	}
+	.mod-subscribe .form-control{
+		width: 100%;
+	}
+	.mod-subscribe form{
+		text-align: left !important;
+	}
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	
 }
 
-@media (max-width: 440px){
-	.jumbotron .btn-lg,
-	.media-subscribe-sample .btn{
-		width: 100%;
-		padding: 10px 10px;
-		overflow: visible;
-		font-size: 1em;
-		word-break: break-all;
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.mod-lmtrinfo .media > .pull-left{
+		margin-right: 30px;
+		margin-left: 37px;
 	}
 }
