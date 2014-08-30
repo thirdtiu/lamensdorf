@@ -232,7 +232,6 @@ img{
 	color: #333;
 }
 .footer-brad{
-	/*margin-top:-426px;*/
 	position: absolute;
 	bottom: -96px;
 }
@@ -270,14 +269,6 @@ img{
 
 #toTopHover {
 	display:none;
-	/*width:51px;
-	height:51px;
-	
-	overflow:hidden;
-	float:left;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);*/
 }
 
 #toTop:active, #toTop:focus {
