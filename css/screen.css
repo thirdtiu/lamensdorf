@@ -275,6 +275,118 @@ img{
 	outline:none;
 }
 
+/** formstack css override **/
+.fsEmbed .fsForm{
+	display: block !important;
+	border:none !important;
+	text-align: center;
+}
+.fsBody .fsRowBody{
+	padding: 0 !important
+}
+.fsForm .fsLabel{
+	position: absolute;
+	border:none;
+	clip:rect(0px, 0px, 0px, 0px);
+	height: 1px;
+	margin:-1px;
+	overflow: hidden;
+	padding:0;position: absolute;
+	width: 1px;
+}
+.fsFieldFocused{
+	background-color: transparent !important;
+}
+.fsFieldRow input[type="email"],
+.fsFieldRow input[type="number"],
+.fsFieldRow input[type="tel"],
+.fsFieldRow input[type="text"],
+.fsForm textarea{
+	display: inline-block;
+	width: 400px;
+	vertical-align: middle;
+	border:1px solid #333 !important;
+	font-size: 18px !important;
+	height: 46px;
+	line-height: 1.33;
+	padding:10px 16px !important;
+	background: #fff !important;
+	color: #555;
+	transition:border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	box-shadow: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: normal !important;
+}
+.fsForm input.fsField[type="email"]:focus,
+.fsForm input.fsField[type="file"]:focus,
+.fsForm input.fsField[type="number"]:focus,
+.fsForm input.fsField[type="tel"]:focus,
+.fsForm input.fsField[type="text"]:focus,
+.fsForm textarea.fsField:focus{
+	border-color: #333 !important;
+}
+.fsPage{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.fsForm .fsSubmit{
+	clear:none !important;
+	margin:0 !important;
+	padding:0 !important;
+	display: inline-block;
+	background: none !important;
+}
+.fsSubmit input.fsSubmitButton{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: 200;
+	font-size: 1.5625em;
+	padding: 10px 16px !important;
+	white-space: inherit;
+	border:none !important;
+}
+.fsSubmit input.fsSubmitButton{
+	background-color: #221f73;
+	color: #fff !important;
+	font-family: "Open Sans", sans-serif;
+	-webkit-box-shadow: inset 0 -5px rgba(255,255,255,.14);
+	-moz-box-shadow: inset 0 -5px rgba(255,255,255,.14);
+	box-shadow: inset 0 -5px rgba(255,255,255,.14);
+}
+.fsSubmit input.fsSubmitButton:hover,
+.fsSubmit input.fsSubmitButton:focus,
+.fsSubmit input.fsSubmitButton:active,
+.fsSubmit input.fsSubmitButton.active{
+	background-color: #29258b;
+	-webkit-box-shadow: inset 0 -5px rgba(255,255,255,.14);
+	-moz-box-shadow: inset 0 -5px rgba(255,255,255,.14);
+	box-shadow: inset 0 -5px rgba(255,255,255,.14);
+}
+.clear{
+	display: none !important;
+}
+::-webkit-input-placeholder {
+   font-weight: normal;
+   font-family: "Open Sans", sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-weight: normal;
+   font-family: "Open Sans", sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-weight: normal; 
+   font-family: "Open Sans", sans-serif;
+}
+
+:-ms-input-placeholder {  
+   font-weight: normal;
+   font-family: "Open Sans", sans-serif;
+}
+
+
 /* Small devices (tablets, mobile) */
 @media (max-width: 991px){
 	.mod-lmtrinfo .media > .pull-left{
